@@ -1,0 +1,32 @@
+/* ------------------- It's a CSS file For Only CV page ------------------- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 80%;
+    padding: 300px; 
+}
+
+/* Columns Section */
+.columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+.column {
+    width: 50%;
+    background-color: #ffffff50;
+    padding: 20px;
+    border-radius: 10px;
+    border: solid 1px;
+    border-color: #ffffff80;
+    box-shadow: 2px 2px 8px rgba(48, 48, 48, 0.257);
+}

@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html, body {
+    height: 100%;
+    background: linear-gradient(#eefff9 0%, #ffccc1 49%, #dcdbff 100%); /* Full-screen gradient background */
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 10%;
+    border-bottom: 1px solid #000;    /* There will be one line at the bottom of the navigation bar  */
+    z-index: 10;   /* When u scroll the page the bar will be always visible.  */
+}
+nav img{               /* The icon "Su Kyeong Heo" image. */
+    height: 40px;
+    width: 23%;
+    cursor: pointer;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 10px 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+nav ul li a {
+    text-decoration: none;  /* Remove underline from links */
+    color: inherit;         /* Inherit text color from parent */
+}
+
+nav ul li a:hover {
+    font-weight: 510; /* Add hover effect to links */
+    text-shadow: 2px 2px 4px rgba(49, 49, 49, 0.308);
+}
+
+/* Login & Sign up button */
+.nav-btn{
+    background: #000;
+    color: #fff;
+    font-size: 15px;
+    padding: 10px 20px;
+    border: 0;
+    outline: 0;
+    border-radius: 40px;
+    cursor: pointer;
+}
+.nav-btn img{     /* The icon next to the 'Login & Register' text. */
+    height: 15px;
+    width: 17px;
+    margin-left: 8px;
+}
+.nav-btn:hover {
+    box-shadow: 4px 4px 6px rgba(49, 49, 49, 0.508);
+}
+
+/* .header{        
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(#eefff9 0%, #ffccc1 49%, #dcdbff 100%);
+    padding: 0 10%;
+} */

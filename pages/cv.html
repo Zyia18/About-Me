@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <link rel="stylesheet" href="../design/core.css">
+    <link rel="stylesheet" href="../design/cv.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <img src="../images/LogoName.png" alt="" class="logo">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../pages/schedule.html">Schedule</a></li>
+            <li><a href="../pages/community.html">Community</a></li>
+            <li><a href="../pages/cv.html">CV</a></li>
+        </ul>
+        <a href="../pages/login.html">     <!--The "anchor tag" makes 'html' Add a link to a button-->
+        <button class="nav-btn">Login & Sign up<img src="../images/LoginWhite.png" alt=""></button>
+        </a>
+    </nav>
+    <div class="container">
+        <!-- Profile pic Section -->
+        <div class="profile">
+            <img src="../images/FaceImage1.png" alt="Profile Image" class="profile-img">
+            <div>
+                <p>Degree (Undergraduate, Junior Year)<br>- Global Business at Korea University Sejong campus</p>
+                <p>Programming Experience<br>- 1 year</p>
+            </div>
+        </div>
+
+        <!--Two Columns Section-->
+        <div class="columns">
+            <div class="column">
+                <h3>Licenses & Certifications</h3>
+                <ul>
+                    <li>TOEIC 900 License<br>(Jan 14, 2023)</li>
+                    <li>TESOL(Teaching Englis to Speakers of Other Languages) Certificate<br>(Jan 30, 2023)</li>
+                </ul>
+            </div>
+        
+
+            <div class="column">
+                <h3>Extracurricular Activities</h3>
+                <ul>
+                    <li>Second Prize, English Speech competition<br>(Apr 06, 2023)</li>
+                    <li>Student Ambassador of Eco-Up Department<br>(Apr 05, 2024 - Present)</li>
+                    <li>Student Ambassador for Exchange Students<br>(Mar 21, 2024 - Present)</li>
+                    <li>English Clinic Program<br>(May 13, 2024 - June 17, 2024)</li>
+                    <li>Eco-Up Global Program<br>(Aug 12, 2024 - Aug 16, 2024)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        let navbar = document.querySelector('nav');
+    
+        window.onscroll = function(){
+            if(window.scrollY > 0){
+                navbar.style.background = '#eefff9';
+            }else{
+                navbar.style.background = 'transparent';
+            }
+        }
+    </script>
+</body>
+</html> 

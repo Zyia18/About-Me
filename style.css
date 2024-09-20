@@ -1,0 +1,158 @@
+/* ------------------- It's a CSS file For Only Home page ------------------- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 10%;
+    border-bottom: 1px solid #000;    /* There will be one line at the bottom of the navigation bar  */
+    z-index: 10;   /* When u scroll the page the bar will be always visible.  */
+}
+nav img{               /* The icon "Su Kyeong Heo" image. */
+    height: 40px;
+    width: 23%;
+    cursor: pointer;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 10px 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+nav ul li a {
+    text-decoration: none;  /* Remove underline from links */
+    color: inherit;         /* Inherit text color from parent */
+}
+
+nav ul li a:hover {
+    font-weight: 510; /* Add hover effect to links */
+    text-shadow: 2px 2px 4px rgba(49, 49, 49, 0.308);
+}
+
+/* Login & Sign up button */
+.nav-btn{
+    background: #000;
+    color: #fff;
+    font-size: 15px;
+    padding: 10px 20px;
+    border: 0;
+    outline: 0;
+    border-radius: 40px;
+    cursor: pointer;
+}
+.nav-btn img{     /* The icon next to the 'Login & Register' text. */
+    height: 15px;
+    width: 17px;
+    margin-left: 8px;
+}
+.nav-btn:hover {
+    box-shadow: 4px 4px 6px rgba(49, 49, 49, 0.508);
+}
+
+.header{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(#eefff9 0%, #ffccc1 49%, #dcdbff 100%);
+    padding: 0 10%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.header h1{
+    margin-top: 100px;
+    font-size: 13vw;
+    line-height: 11vw;
+}
+
+/* It's for the Contact Info button. */
+.btn-container{
+    margin: 20px 0;
+}
+.header button{
+    border: 0;
+    outline: 0;
+    display: inline-flex;
+    align-items: center;
+    font-size: 18px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.btn-dark{
+    background: #000;
+    color: #fff;
+    padding: 10px 10px 10px 30px;
+    border-radius: 40px;
+}
+.btn-dark:hover {
+    box-shadow: 4px 4px 6px rgba(49, 49, 49, 0.508);
+}
+.btn-dark img{
+    width: 40px;
+    background: #fff;
+    border-radius: 50%;
+    padding: 9px;
+    margin-left: 30px;
+}
+
+.header p{
+    max-width: 370px;
+    font-weight: 500;
+}
+
+.user-img{
+    width: 30%;   
+    max-width: 370px;
+    position: absolute;
+    right: 13%;   /* it will make the pic be at 13% of space from the right side. */
+    bottom: 0;
+}
+
+/* ------------ The animation for the text 'ABOUT ME'. ----------- */
+.header h1 span{
+    background: linear-gradient(#000, #000);
+    background-repeat: no-repeat;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-size: 0%;
+}
+.header h1 span:first-child{
+    animation: textcolor1 2s linear infinite alternate;   /* It'll hide the text using this alternate */
+}
+.header h1 span:last-child{
+    animation: textcolor2 2s linear infinite alternate;
+}
+@keyframes textcolor1 {
+    0%{
+        background-size: 0%;    /* Initially the background size will be zero */
+    }
+    50%{
+        background-size: 100%;   /* After 40% time of the 2s, the background size will be 100%  */
+    }
+    100%{
+        background-size: 100%;
+    }
+}
+@keyframes textcolor2 {          /* this animate is for the text 'ME'. It's shorter then 'ABOUT' so, we need more time then 'ABOUT' to match the time with it. */
+    0%{
+        background-size: 0%;
+    }
+    30%{
+        background-size: 0%;
+    }
+    60%{
+        background-size: 100%;
+    }
+    100%{
+        background-size: 100%;
+    }
+}

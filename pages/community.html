@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community</title>
+    <link rel="stylesheet" href="../design/core.css">
+    <link rel="stylesheet" href="../design/community.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <img src="../images/LogoName.png" alt="" class="logo">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../pages/schedule.html">Schedule</a></li>
+            <li><a href="../pages/community.html">Community</a></li>
+            <li><a href="../pages/cv.html">CV</a></li>
+        </ul>
+        <a href="../pages/login.html">     <!--The "anchor tag" makes 'html' Add a link to a button-->
+        <button class="nav-btn">Login & Sign up<img src="../images/LoginWhite.png" alt=""></button>
+        </a>
+    </nav>
+
+    <div class="container">
+        <aside class="sidebar">
+            <div class="top">
+            <h3>Community</h3>
+            </div>
+            <ul>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+        </aside>
+
+        <main class="content">
+            
+            <!-- Page Title -->
+            <h2 class="page_title">FAQ</h2>
+
+            <!-- Search Bar -->
+            <div class="search_container">
+                <select>
+                    <option value="all">All</option>
+                    <option value="title">Title</option>
+                    <option value="author">Author</option>
+                </select>
+                <input type="text" placeholder="Search...">
+                <button>Search</button>
+            </div>
+
+
+            <!-- Q&A Table -->
+            <div class="qna_table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>List Order</th>
+                            <th>Subject</th>
+                            <th>Author</th>
+                            <th>Date</th>
+                            <th>Views</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td><a href="#">Q: How old are you</a></td>
+                            <td>songji Kim</td>
+                            <td>Sep-20-2024</td>
+                            <td>87</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination">
+                <button class="prev">&laquo;</button>
+                <button class="page-number active">1</button>
+                <button class="page-number">2</button>
+                <button class="page-number">3</button>
+                <button class="next">&raquo;</button>
+            </div>
+        </main>
+    </div>
+    
+</body>
+</html> 

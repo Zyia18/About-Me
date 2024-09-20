@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">   <!--from here, It's about the Google font and left 2rows below-->
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<nav>
+    <img src="images/LogoName.png" alt="LogoName">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="pages/schedule.html">Schedule</a></li>
+        <li><a href="pages/community.html">Community</a></li>
+        <li><a href="pages/cv.html">CV</a></li>
+    </ul>
+    <a href="pages/login.html">     <!--The "anchor tag" makes 'html' Add a link to a button-->
+    <button class="nav-btn">Login & Sign up<img src="images/LoginWhite.png" alt=""></button>
+    </a>
+</nav>
+<div class="header">
+    <h1><span>ABOUT</span><br><span>ME</span></h1>  <!--Add <span> to give the texts some animate effect.-->
+    <a href="pages/contact.html">      <!--Add a link to a button-->
+    <div class="btn-container">
+        <button class="btn-dark">Contact Info <img src="images/phone.png" alt=""></button>
+    </div>
+    </a>
+    <p>A versatile engineer with majors in both Global Business and Cyber Security. </p>
+
+    <img src="images/BackgroundImage.png" alt="" class="user-img">
+</div>
+
+
+<script>
+    let navbar = document.querySelector('nav');
+
+    window.onscroll = function(){
+        if(window.scrollY > 0){
+            navbar.style.background = '#eefff9';
+        }else{
+            navbar.style.background = 'transparent';
+        }
+    }
+</script>
+</body>
+</html>

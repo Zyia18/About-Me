@@ -1,0 +1,55 @@
+/* ------------------- It's a CSS file For Only CV page ------------------- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body {
+    min-height: 150vh;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 80%;
+    padding: 120px;
+}
+
+/* Profile Section */
+.profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.profile-img {
+    width: 150px;
+    height: auto;
+    border-radius: 40%;
+    object-fit: cover;
+    margin-right: 20px;
+    box-shadow: 2px 2px 8px rgba(48, 48, 48, 0.257);
+}
+.profile-info {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+/* Columns Section */
+.columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.column {
+    width: 48%;
+    background-color: #ffffff50;
+    padding: 20px;
+    border-radius: 10px;
+    border: solid 1px;
+    border-color: #ffffff80;
+    box-shadow: 2px 2px 8px rgba(48, 48, 48, 0.257);
+}
+.column h3 {
+    margin-bottom: 15px;
+}
